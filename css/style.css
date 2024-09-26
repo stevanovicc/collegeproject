@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.naslov{
+    text-align: center;
+    color: #87c9c9;
+}
+.meni{
+    position: sticky;
+    background-color: beige;
+    display: flex;
+    padding-left: 10%; 
+    height: 5em;
+     
+}
+.meni>ul {
+    list-style-type: none;
+    display: flex;
+    flex: 3;
+    align-items: center;
+}
+.meni>ul>li{
+    display: flex;
+    padding-left: 5%;
+    
+}
+.meni>ul>li>a{
+    color: #87c9c9;
+    text-decoration: none;
+}
+.meni a:hover{
+    background-color: darkcyan;
+    border-radius: 10%;
+}
+.buttons{
+    display: flex;
+    padding-top: 85%;
+    justify-content: space-around;
+    padding-bottom: 8%;
+}
+.tdugme{
+    color: black;
+    background-color: #87c9c9;
+    height: 20px;
+
+    
+}
+.dugme{
+    border-color: #87c9c9;
+    border: 0;
+    border-radius: 0;
+}
+.dugme a:hover{
+ background-color: #275454;
+}
+.dugme a{
+    text-decoration: none;
+}
+#srednjideo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 5% 8%;
+}
+
+#srednjideo .deca {
+    width: 30%;
+    padding: 0 2em;
+}
+
+.demo {
+    width: 95%;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+.btn{
+    line-height: 2em;
+    padding: .5em;
+    border: 1px solid grey;
+    border-radius: .5em;
+    color: black;
+}
+.btn:hover{
+    background-color: gainsboro;
+}
+.btn:active {
+    color: rgb(86, 230, 187);
+}

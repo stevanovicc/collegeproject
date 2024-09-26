@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.meni{
+    position: sticky;
+    background-color: beige;
+    display: flex;
+    padding-left: 10%; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 5em;
+     
+}
+.meni>ul {
+    list-style-type: none;
+    display: flex;
+    flex: 3;
+    align-items: center;
+}
+.meni>ul>li{
+    display: flex;
+    padding-left: 5%;
+    
+}
+.meni>ul>li>a{
+    color: #87c9c9;
+    text-decoration: none;
+}
+.meni a:hover{
+    background-color: darkcyan;
+    border-radius: 10%;
+}
+#dugme1{
+    margin-left: 30px;
+    padding: 20px 30px;
+
+}

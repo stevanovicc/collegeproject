@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porucivanje</title>
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/galerija.css" />
+    <link rel="stylesheet" href="css/porucivanje.css"/>
+    <style>
+      body{
+        background-image: url('img/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+    <script src="script/script.js"></script>
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="meni">
+      <ul>
+          <a href="index.html"><img src="img/logo3-rsz.png" alt=""></a>
+          <li><a href="porucivanje.html">PORUCIVANJE</a></li>
+          <li><a href="onama.html">O NAMA</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>        
+      </ul>
+    </nav>
+  <form>
+      <label for="ime">Ime</label>
+      <input type="text" name="ime" id="ime" size="20" maxlength="15" value placeholder="Unesite ime" required><br>
+      <label for="prezime">Prezime</label>
+      <input type="text" name="prezime" id="prezime" size="24" maxlength="22" value placeholder="Unesite Prezime" required><br>
+      <label for="email">Vas email</label>
+      <input type="email" id="email" value placeholder="email@email.com" required><br>
+      <label for="adresa">Vasa Adresa</label>
+      <input type="text" name="adresa" id="adresa" required><br>
+      <label for="phone">Vas broj telefona</label>
+      <input type="number" id="phone" name="phone" maxlength="10" required><br>
+      <label for="izaberi">Izaberite događaj</label>
+      <select name="izaberi" id="izaberi">
+      <optgroup label="Košarka">
+        <option value="czvigo">Crvena Zvezda-Igokea</option>
+        <option value="czvlio">Crvena Zvezda-Lion</option>
+        <option value="parbud">Partizan-Budućnost</option>
+        <option value="fmpbor">Fmp-Borac</option>
+      </optgroup>
+      <optgroup label="Fudbal">
+        <option value="czvrad">Crvena Zvezda-Rad</option>
+        <option value="vozvoj">Voždovac-Vojvodina</option>
+      </optgroup>
+      </select><br>
+      <label for="radio">Način preuzimanja:</label><br>
+      <label for="ulokalu">U lokalu</label>
+      <input type="radio" name="preuzimanje"  id="ulokalu" value="U lokalu"><br>
+      <label for="naadresi">Slanje na adresu</label>
+      <input type="radio" name="preuzimanje" id="naadresi"> <br>     
+      <textarea name="komentar" id="textarea" cols="30" rows="10" value placeholder="Dodatni komentar, zahtevi, tip karte za poručivanje, itd..."></textarea><br>
+      <input type="submit" id="dugme1" value="Poruči" onclick="validacija()">
+  </form>
+  </body>
+</html>
